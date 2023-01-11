@@ -1,5 +1,8 @@
 # hibernate-tutorial-1
 
+To-do: Add this information as an Example class in the project
+https://stackoverflow.com/a/4049758/18022139
+
 ---I. Project Purpose ----------------------------------------------------------------------------------- 
 	
 	- The project is based on Sections 18-21 from the Udemy course

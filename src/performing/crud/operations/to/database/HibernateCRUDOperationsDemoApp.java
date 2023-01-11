@@ -12,10 +12,15 @@ public class HibernateCRUDOperationsDemoApp {
 		
 		// creating a Student object and populating it's fields
 		Student student = new Student("Emma", "Watson", "fakeemma@fakemail.com");
-		// creating a session factory and configuring it
+		// configuring and creating a session factory
 		SessionFactory sessionFactory = new Configuration().
+				// Telling the Factory which Configuration file to use/read
 				configure("hibernate.cfg.xml").
+				// Adding the Annotated Class
+					// if you want to add more Annotated Classes, then you simply
+					// continue the chain of methods by adding another ".addAnnotatedClass(Example.class)"
 				addAnnotatedClass(Student.class).
+				// Returns a SessionFactory Object
 				buildSessionFactory();
 		
 		// 1. Saving an Object to the Database
@@ -61,9 +66,11 @@ public class HibernateCRUDOperationsDemoApp {
 		// ending the transaction
 		session.getTransaction().commit();
 		
-		// 3. Retrieving all Objects from the Database,
-		// calling their "getId()" and "getFirstName()" methods
-		// and printing them in the Console
+		// 3.1. Retrieving all Objects from the Database,
+		// by making a Query to the Database using HQL (Hibernate Query Language)
+		// and returning ther results from that Query as a List
+		// Then we are going to call their "getId()" and "getFirstName()" methods
+		// and print the returned values from them in the Console
 		// starting a new session
 		session = sessionFactory.getCurrentSession();
 		// starting a new transaction
