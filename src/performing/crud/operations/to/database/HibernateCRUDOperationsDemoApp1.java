@@ -1,12 +1,10 @@
 package performing.crud.operations.to.database;
 
-import java.util.List;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class HibernateCRUDOperationsDemoApp {
+public class HibernateCRUDOperationsDemoApp1 {
 	
 	public static void main(String[] args) {
 		
@@ -66,27 +64,6 @@ public class HibernateCRUDOperationsDemoApp {
 		// ending the transaction
 		session.getTransaction().commit();
 		
-		// 3.1. Retrieving all Objects from the Database,
-		// by making a Query to the Database using HQL (Hibernate Query Language)
-		// and returning ther results from that Query as a List
-		// Then we are going to call their "getId()" and "getFirstName()" methods
-		// and print the returned values from them in the Console
-		// starting a new session
-		session = sessionFactory.getCurrentSession();
-		// starting a new transaction
-		session.beginTransaction();
-		// creating a List, where we will store all the Student objects
-		// creating a Query to the Database (using HQL - Hibernate Query Language)
-		// and returning the Query results as a List
-		List<Student> myStudents = session.
-				createQuery("from Student", Student.class).
-				getResultList();
-		// Iterating over each Student object and
-		// calling their "getId()" and "getFirstName()" methods
-		for(Student tempStudent: myStudents){
-			System.out.println(tempStudent.getId() + " " + 
-								tempStudent.getFirstName());
-		}
 	}
 	
 }
