@@ -22,6 +22,7 @@ public class TestConnection {
 				// hb_student_tracker is the database name. 
 				// "hbstudent" is the username
 				// "hbstudent" is the password
+			@SuppressWarnings("unused")
 			Connection connection = DriverManager.getConnection
 					("jdbc:mysql://localhost:3306/hb_student_tracker", 
 			        "hbstudent", "hbstudent");

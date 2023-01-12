@@ -6,11 +6,11 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class HibernateCRUDOperationsDemoApp2 {
+public class RetrievingMultipleObjectsFromDatabaseByQuery1 {
 	
 	public static void main(String[] args) {
 		
-		// Check out HibernateCRUDOperationsDemoApp1, 
+		// Check out SavingAndRetrievingAnObjectFromDatabase.class, 
 		// before proceeding to read the example code in this class
 		
 		// configuring and creating a session factory

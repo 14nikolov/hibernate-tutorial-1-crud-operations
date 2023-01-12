@@ -4,7 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class HibernateCRUDOperationsDemoApp1 {
+public class SavingAndRetrievingAnObjectFromDatabase {
 	
 	public static void main(String[] args) {
 		
@@ -57,7 +57,7 @@ public class HibernateCRUDOperationsDemoApp1 {
 			// from the Database, because our database is configured 
 			// to auto-increment, the id(primary key) value of each
 			// newly added Student object
-		Student student2 = session.get(Student.class, 12);
+		Student student2 = session.get(Student.class, 11);
 		// calling the object's "toString" method and 
 		// printing the result in the console
 		System.out.println(student2.toString());

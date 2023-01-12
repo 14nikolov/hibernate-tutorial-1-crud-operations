@@ -6,10 +6,15 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class HibernateCRUDOperationsDemoApp3 {
+public class RetrievingMultipleObjectsFromDatabaseByQuery2 {
 
 	public static void main(String[] args) {
 
+		// Check out SavingAndRetrievingAnObjectFromDatabase.class
+		// and RetrievingMultipleObjectsFromDatabaseByQuery1.class
+		// before proceeding to read the example code in this class
+		// one of the reasons being much less explanatory comments
+		
 		SessionFactory sessionFactory = new Configuration().
 				configure("hibernate.cfg.xml").
 				addAnnotatedClass(Student.class).

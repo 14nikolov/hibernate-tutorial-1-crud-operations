@@ -81,4 +81,10 @@ https://stackoverflow.com/a/4049758/18022139
 	read data as Objects from the Database, Update the data and Delete it.
 		- everything is explained in detail in the package of this project named:
 		"performing.crud.operations.to.database" 
-
+		- order to read the classes in:
+			1. Student.java
+			2. SavingAndRetrievingAnObjectFromDatabase.java
+			3. RetrievingMultipleObjectsFromDatabaseByQuery1.java
+			4. RetrievingMultipleObjectsFromDatabaseByQuery2.java
+			5. UpdatingOneDatabaseObject.java
+			6. UpdatingMultipleDatabaseObjects.java
