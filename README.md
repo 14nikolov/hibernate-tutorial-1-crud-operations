@@ -88,3 +88,5 @@ https://stackoverflow.com/a/4049758/18022139
 			4. RetrievingMultipleObjectsFromDatabaseByQuery2.java
 			5. UpdatingOneDatabaseObject.java
 			6. UpdatingMultipleDatabaseObjects.java
+			7. DeleteObjectsFromDatabase1
+			8. DeleteObjectsFromDatabase2
