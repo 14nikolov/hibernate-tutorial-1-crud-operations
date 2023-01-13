@@ -90,3 +90,12 @@ https://stackoverflow.com/a/4049758/18022139
 			6. UpdatingMultipleDatabaseObjects.java
 			7. DeleteObjectsFromDatabase1
 			8. DeleteObjectsFromDatabase2
+			
+---VII. Practice Activity 8------------------------------------------------------------- 			
+
+	- This is an Exercise from the Course, it aims to make you practice
+	CRUD operations to the Database. I have completed the exercise in package:
+	"practice.activity8.hibernate.development"
+	
+	
+	
