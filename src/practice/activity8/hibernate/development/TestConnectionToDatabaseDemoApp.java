@@ -11,7 +11,7 @@ public class TestConnectionToDatabaseDemoApp {
 		try {
 			System.out.println("Trying to establish a connection to the Database!");
 			Connection connection = DriverManager.getConnection
-					("jdbc:mysql://localhost:3306/hb_student_tracker?user=hbstudent&password=hbstudent");
+					("jdbc:mysql://localhost:3306/hibernate-tutorial-1-crud-operations?user=hbstudent&password=hbstudent");
 			System.out.println("\nSuccessfully established a connection to the Database!");
 
 		} catch (SQLException e) {

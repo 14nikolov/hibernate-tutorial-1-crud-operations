@@ -24,7 +24,7 @@ public class TestConnection {
 				// "hbstudent" is the password
 			@SuppressWarnings("unused")
 			Connection connection = DriverManager.getConnection
-					("jdbc:mysql://localhost:3306/hb_student_tracker", 
+					("jdbc:mysql://localhost:3306/hibernate-tutorial-1-crud-operations", 
 			        "hbstudent", "hbstudent");
 			// Logging Message for our Console
 			System.out.println("Sucessfully established connection to database");
